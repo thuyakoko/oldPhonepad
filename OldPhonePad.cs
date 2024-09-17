@@ -44,14 +44,15 @@ public class OldPhonePadSimulator
             }
             else if (keypad.ContainsKey(ch))
             {
-                // If the same digit is pressed again, increment press count
+                //Handle multiple presses of the same key(eg pressing '2' once gives 'A', pressing it twice gives 'B', and so on.)
+                //If the same digit is pressed again, increment press count
                 if (ch == lastDigit)
                 {
                     pressCount++;
                 }
                 else
                 {
-                    // New digit is pressed, reset press count
+                    // New digit is pressed, reset press count(no longer cycling through the letters of the previous key)
                     lastDigit = ch;
                     pressCount = 1;
                 }
