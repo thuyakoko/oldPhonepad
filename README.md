@@ -38,7 +38,7 @@ OldPhonePadSimulator.OldPhonePad("8 88777444666*664#"); // Returns: "TOOL"
     - Build the solution.
 
 3. **Run the tests**:
-    - Use NUnit or XUnit to run the test suite provided in the `OldPhonePadTests` class.
+    - Use NUnit to run the test suite provided in the `OldPhonePadTests` class.
 
 ## Test Cases
 
